@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheFootballGuy72 Prediction Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2332 100%);
+            color: #e0e6ed;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .youtube-link {
+            display: inline-block;
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        .youtube-link:hover {
+            background: rgba(255, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+        }
+
+        .card-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-label {
+            color: #94a3b8;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .position-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .higher {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+        }
+
+        .lower {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+
+        .exact {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .tab:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            color: white;
+            border-color: transparent;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .match-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .match-header {
+            font-weight: 600;
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.1);
+        }
+
+        .match-teams {
+            font-weight: 600;
+        }
+
+        .score {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .badge-exact {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+        }
+
+        .badge-result {
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+        }
+
+        .badge-wrong {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+        }
+
+        .badge-uncertain {
+            background: rgba(168, 85, 247, 0.2);
+            color: #c084fc;
+            margin-left: 8px;
+        }
+
+        .notes {
+            background: rgba(168, 85, 247, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #a855f7;
+            margin-bottom: 20px;
+        }
+
+        .notes ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .notes li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .notes li:before {
+            content: "⚽";
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .as-of {
+            color: #94a3b8;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .summary-cards {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .card-value {
+                font-size: 1.8em;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 8px 4px;
+            }
+
+            .match-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                font-size: 0.9em;
+            }
+
+            .match-header {
+                display: none;
+            }
+
+            .section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ TheFootballGuy72 Prediction Tracker</h1>
+            <a href="https://www.youtube.com/@TheFootballGuy72" target="_blank" class="youtube-link">
+                📺 Visit YouTube Channel
+            </a>
+            <div class="as-of" id="asOf"></div>
+        </header>
+
+        <div class="summary-cards" id="summaryCards"></div>
+
+        <div class="section">
+            <h2 class="section-title">📊 Season Predictions vs. Reality</h2>
+            <div style="overflow-x: auto;">
+                <table id="seasonTable"></table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 Matchweek Predictions</h2>
+            <div class="tabs" id="matchweekTabs"></div>
+            <div id="matchweekContent"></div>
+        </div>
+
+        <div class="notes" id="notes"></div>
+
+        <footer>
+            <p>Data Source: <a href="#" id="actualsSource" target="_blank"></a></p>
+            <p style="margin-top: 10px;">Built with ❤️ for TheFootballGuy72</p>
+        </footer>
+    </div>
+
+    <script id="data" type="application/json">
+{
+  "channel_name": "TheFootballGuy72",
+  "channel_url": "https://www.youtube.com/@TheFootballGuy72",
+  "as_of": "2026-09-06",
+  "match_totals": {
+    "exact_score": 4,
+    "total_matches": 20,
+    "correct_result": 11,
+    "season_mae": 5.0
+  },
+  "season_picks": [
+    {"rank": 1, "team": "Arsenal", "predicted_points": 91, "current_position": 2, "current_points": 89},
+    {"rank": 2, "team": "Liverpool", "predicted_points": 89, "current_position": 6, "current_points": 77},
+    {"rank": 3, "team": "Man Utd", "predicted_points": 87, "current_position": 11, "current_points": 74},
+    {"rank": 4, "team": "Man City", "predicted_points": 86, "current_position": 1, "current_points": 90},
+    {"rank": 5, "team": "Chelsea", "predicted_points": 81, "current_position": 4, "current_points": 83},
+    {"rank": 6, "team": "Spurs", "predicted_points": 79, "current_position": 18, "current_points": 60},
+    {"rank": 7, "team": "Villa", "predicted_points": 77, "current_position": 17, "current_points": 61},
+    {"rank": 8, "team": "Leeds", "predicted_points": 73, "current_position": 9, "current_points": 74},
+    {"rank": 9, "team": "Everton", "predicted_points": 69, "current_position": 8, "current_points": 75},
+    {"rank": 10, "team": "Brentford", "predicted_points": 67, "current_position": 5, "current_points": 81},
+    {"rank": 11, "team": "Bournemouth", "predicted_points": 63, "current_position": 15, "current_points": 67},
+    {"rank": 12, "team": "Forest", "predicted_points": 61, "current_position": 16, "current_points": 65},
+    {"rank": 13, "team": "Brighton", "predicted_points": 59, "current_position": 10, "current_points": 74},
+    {"rank": 14, "team": "Sunderland", "predicted_points": 57, "current_position": 12, "current_points": 73},
+    {"rank": 15, "team": "Palace", "predicted_points": 55, "current_position": 13, "current_points": 71},
+    {"rank": 16, "team": "Fulham", "predicted_points": 53, "current_position": 19, "current_points": 58},
+    {"rank": 17, "team": "Coventry", "predicted_points": 51, "current_position": 20, "current_points": 56},
+    {"rank": 18, "team": "Newcastle", "predicted_points": 49, "current_position": 7, "current_points": 76},
+    {"rank": 19, "team": "Hull", "predicted_points": 47, "current_position": 3, "current_points": 85},
+    {"rank": 20, "team": "Ipswich", "predicted_points": 45, "current_position": 14, "current_points": 68}
+  ],
+  "matchweeks": [
+    {
+      "week": 2,
+      "matches": [
+        {"home": "Palace", "away": "Man City", "predicted_home": 1, "predicted_away": 1, "actual_home": 1, "actual_away": 4},
+        {"home": "Liverpool", "away": "Forest", "predicted_home": 3, "predicted_away": 1, "actual_home": 2, "actual_away": 2},
+        {"home": "Bournemouth", "away": "Everton", "predicted_home": 0, "predicted_away": 1, "actual_home": 1, "actual_away": 1},
+        {"home": "Coventry", "away": "Hull", "predicted_home": 1, "predicted_away": 0, "actual_home": 0, "actual_away": 1},
+        {"home": "Spurs", "away": "Newcastle", "predicted_home": 2, "predicted_away": 1, "actual_home": 0, "actual_away": 2},
+        {"home": "Chelsea", "away": "Brighton", "predicted_home": 4, "predicted_away": 3, "actual_home": 4, "actual_away": 3},
+        {"home": "Leeds", "away": "Brentford", "predicted_home": 0, "predicted_away": 0, "actual_home": 1, "actual_away": 1},
+        {"home": "Sunderland", "away": "Fulham", "predicted_home": 4, "predicted_away": 1, "actual_home": 1, "actual_away": 0},
+        {"home": "Man Utd", "away": "Ipswich", "predicted_home": 3, "predicted_away": 0, "actual_home": 5, "actual_away": 2, "uncertain": true},
+        {"home": "Villa", "away": "Arsenal", "predicted_home": 0, "predicted_away": 3, "actual_home": 0, "actual_away": 1}
+      ]
+    },
+    {
+      "week": 3,
+      "matches": [
+        {"home": "Ipswich", "away": "Liverpool", "predicted_home": 1, "predicted_away": 4, "actual_home": 0, "actual_away": 2},
+        {"home": "Newcastle", "away": "Bournemouth", "predicted_home": 2, "predicted_away": 2, "actual_home": 2, "actual_away": 2},
+        {"home": "Brentford", "away": "Sunderland", "predicted_home": 1, "predicted_away": 1, "actual_home": 1, "actual_away": 1},
+        {"home": "Brighton", "away": "Leeds", "predicted_home": 1, "predicted_away": 2, "actual_home": 1, "actual_away": 1},
+        {"home": "Fulham", "away": "Palace", "predicted_home": 0, "predicted_away": 1, "actual_home": 2, "actual_away": 3},
+        {"home": "Man City", "away": "Coventry", "predicted_home": 3, "predicted_away": 0, "actual_home": 1, "actual_away": 0},
+        {"home": "Forest", "away": "Spurs", "predicted_home": 1, "predicted_away": 0, "actual_home": 0, "actual_away": 0},
+        {"home": "Hull", "away": "Villa", "predicted_home": 0, "predicted_away": 0, "actual_home": 0, "actual_away": 0},
+        {"home": "Everton", "away": "Man Utd", "predicted_home": 0, "predicted_away": 2, "actual_home": 2, "actual_away": 2},
+        {"home": "Arsenal", "away": "Chelsea", "predicted_home": 3, "predicted_away": 3, "actual_home": 2, "actual_away": 1}
+      ]
+    }
+  ],
+  "notes": [
+    "Predictions made before season start",
+    "Actuals updated as of 2026-09-06",
+    "Season picks reflect pre-season point predictions"
+  ],
+  "actuals_source": "https://www.transfermarkt.com/premier-league/tabelle/wettbewerb/GB1/saison_id/2026"
+}
+    </script>
+
+    <script>
+        // Load data
+        const data = JSON.parse(document.getElementById('data').textContent);
+
+        // Populate as-of date
+        document.getElementById('asOf').textContent = `Last updated: ${data.as_of}`;
+
+        // Populate summary cards
+        const summaryCards = document.getElementById('summaryCards');
+        const exactPercent = ((data.match_totals.exact_score / data.match_totals.total_matches) * 100).toFixed(0);
+        const resultPercent = ((data.match_totals.correct_result / data.match_totals.total_matches) * 100).toFixed(0);
+        
+        summaryCards.innerHTML = `
+            <div class="card">
+                <div class="card-label">Exact Scores</div>
+                <div class="card-value">${data.match_totals.exact_score}/${data.match_totals.total_matches}</div>
+                <div class="card-label">${exactPercent}% Accuracy</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Correct Result</div>
+                <div class="card-value">${data.match_totals.correct_result}/${data.match_totals.total_matches}</div>
+                <div class="card-label">${resultPercent}% Accuracy</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Season MAE</div>
+                <div class="card-value">${data.match_totals.season_mae.toFixed(1)}</div>
+                <div class="card-label">Points Error</div>
+            </div>
+            <div class="card">
+                <div class="card-label">Matchweeks Tracked</div>
+                <div class="card-value">${data.matchweeks.length}</div>
+                <div class="card-label">${data.match_totals.total_matches} Matches</div>
+            </div>
+        `;
+
+        // Populate season table
+        const seasonTable = document.getElementById('seasonTable');
+        let tableHTML = `
+            <thead>
+                <tr>
+                    <th>His Pick</th>
+                    <th>Team</th>
+                    <th>Now</th>
+                    <th>Pts Predicted</th>
+                    <th>Pts Current</th>
+                    <th>Error</th>
+                    <th>Vs Pick</th>
+                </tr>
+            </thead>
+            <tbody>
+        `;
+
+        data.season_picks.forEach(pick => {
+            const error = Math.abs(pick.predicted_points - pick.current_points);
+            const positionDiff = pick.rank - pick.current_position;
+            let vsPick, vsBadge;
+            
+            if (positionDiff > 0) {
+                vsPick = `Higher (${positionDiff})`;
+                vsBadge = 'higher';
+            } else if (positionDiff < 0) {
+                vsPick = `Lower (${Math.abs(positionDiff)})`;
+                vsBadge = 'lower';
+            } else {
+                vsPick = 'Exact';
+                vsBadge = 'exact';
+            }
+
+            tableHTML += `
+                <tr>
+                    <td><strong>#${pick.rank}</strong></td>
+                    <td><strong>${pick.team}</strong></td>
+                    <td><strong>#${pick.current_position}</strong></td>
+                    <td>${pick.predicted_points}</td>
+                    <td>${pick.current_points}</td>
+                    <td>${error}</td>
+                    <td><span class="position-badge ${vsBadge}">${vsPick}</span></td>
+                </tr>
+            `;
+        });
+
+        tableHTML += '</tbody>';
+        seasonTable.innerHTML = tableHTML;
+
+        // Helper function to determine match result
+        function getMatchResult(predictedHome, predictedAway, actualHome, actualAway) {
+            const predictedResult = predictedHome > predictedAway ? 'H' : (predictedHome < predictedAway ? 'A' : 'D');
+            const actualResult = actualHome > actualAway ? 'H' : (actualHome < actualAway ? 'A' : 'D');
+            
+            if (predictedHome === actualHome && predictedAway === actualAway) {
+                return { badge: 'badge-exact', text: '✓ Exact' };
+            } else if (predictedResult === actualResult) {
+                return { badge: 'badge-result', text: '≈ Result' };
+            } else {
+                return { badge: 'badge-wrong', text: '✗ Wrong' };
+            }
+        }
+
+        // Populate matchweek tabs and content
+        const matchweekTabs = document.getElementById('matchweekTabs');
+        const matchweekContent = document.getElementById('matchweekContent');
+
+        data.matchweeks.forEach((mw, index) => {
+            // Create tab
+            const tab = document.createElement('div');
+            tab.className = `tab ${index === 0 ? 'active' : ''}`;
+            tab.textContent = `Matchweek ${mw.week}`;
+            tab.onclick = () => switchTab(index);
+            matchweekTabs.appendChild(tab);
+
+            // Create content
+            const content = document.createElement('div');
+            content.className = `tab-content ${index === 0 ? 'active' : ''}`;
+            content.id = `mw-${index}`;
+
+            let contentHTML = `
+                <div class="match-row match-header">
+                    <div>Match</div>
+                    <div>His Score</div>
+                    <div>Actual</div>
+                    <div>Exact?</div>
+                    <div>Result</div>
+                </div>
+            `;
+
+            mw.matches.forEach(match => {
+                const result = getMatchResult(
+                    match.predicted_home, match.predicted_away,
+                    match.actual_home, match.actual_away
+                );
+                const uncertainBadge = match.uncertain ? '<span class="badge badge-uncertain">Uncertain</span>' : '';
+
+                contentHTML += `
+                    <div class="match-row">
+                        <div class="match-teams">${match.home} vs ${match.away}${uncertainBadge}</div>
+                        <div class="score">${match.predicted_home}-${match.predicted_away}</div>
+                        <div class="score">${match.actual_home}-${match.actual_away}</div>
+                        <div>${match.predicted_home === match.actual_home && match.predicted_away === match.actual_away ? '✓' : '✗'}</div>
+                        <div><span class="badge ${result.badge}">${result.text}</span></div>
+                    </div>
+                `;
+            });
+
+            content.innerHTML = contentHTML;
+            matchweekContent.appendChild(content);
+        });
+
+        function switchTab(index) {
+            // Update tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach((tab, i) => {
+                tab.classList.toggle('active', i === index);
+            });
+
+            // Update content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach((content, i) => {
+                content.classList.toggle('active', i === index);
+            });
+        }
+
+        // Populate notes
+        const notesDiv = document.getElementById('notes');
+        let notesHTML = '<h3 style="margin-bottom: 15px; color: #a855f7;">📝 Notes</h3><ul>';
+        data.notes.forEach(note => {
+            notesHTML += `<li>${note}</li>`;
+        });
+        notesHTML += '</ul>';
+        notesDiv.innerHTML = notesHTML;
+
+        // Populate actuals source
+        document.getElementById('actualsSource').href = data.actuals_source;
+        document.getElementById('actualsSource').textContent = 'Transfermarkt Premier League Table';
+    </script>
+</body>
+</html>

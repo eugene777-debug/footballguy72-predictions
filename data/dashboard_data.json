@@ -1,0 +1,71 @@
+{
+  "channel_name": "TheFootballGuy72",
+  "channel_url": "https://www.youtube.com/@TheFootballGuy72",
+  "as_of": "2026-09-06",
+  "match_totals": {
+    "exact_score": 4,
+    "total_matches": 20,
+    "correct_result": 11,
+    "season_mae": 5.0
+  },
+  "season_picks": [
+    {"rank": 1, "team": "Arsenal", "predicted_points": 91, "current_position": 2, "current_points": 89},
+    {"rank": 2, "team": "Liverpool", "predicted_points": 89, "current_position": 6, "current_points": 77},
+    {"rank": 3, "team": "Man Utd", "predicted_points": 87, "current_position": 11, "current_points": 74},
+    {"rank": 4, "team": "Man City", "predicted_points": 86, "current_position": 1, "current_points": 90},
+    {"rank": 5, "team": "Chelsea", "predicted_points": 81, "current_position": 4, "current_points": 83},
+    {"rank": 6, "team": "Spurs", "predicted_points": 79, "current_position": 18, "current_points": 60},
+    {"rank": 7, "team": "Villa", "predicted_points": 77, "current_position": 17, "current_points": 61},
+    {"rank": 8, "team": "Leeds", "predicted_points": 73, "current_position": 9, "current_points": 74},
+    {"rank": 9, "team": "Everton", "predicted_points": 69, "current_position": 8, "current_points": 75},
+    {"rank": 10, "team": "Brentford", "predicted_points": 67, "current_position": 5, "current_points": 81},
+    {"rank": 11, "team": "Bournemouth", "predicted_points": 63, "current_position": 15, "current_points": 67},
+    {"rank": 12, "team": "Forest", "predicted_points": 61, "current_position": 16, "current_points": 65},
+    {"rank": 13, "team": "Brighton", "predicted_points": 59, "current_position": 10, "current_points": 74},
+    {"rank": 14, "team": "Sunderland", "predicted_points": 57, "current_position": 12, "current_points": 73},
+    {"rank": 15, "team": "Palace", "predicted_points": 55, "current_position": 13, "current_points": 71},
+    {"rank": 16, "team": "Fulham", "predicted_points": 53, "current_position": 19, "current_points": 58},
+    {"rank": 17, "team": "Coventry", "predicted_points": 51, "current_position": 20, "current_points": 56},
+    {"rank": 18, "team": "Newcastle", "predicted_points": 49, "current_position": 7, "current_points": 76},
+    {"rank": 19, "team": "Hull", "predicted_points": 47, "current_position": 3, "current_points": 85},
+    {"rank": 20, "team": "Ipswich", "predicted_points": 45, "current_position": 14, "current_points": 68}
+  ],
+  "matchweeks": [
+    {
+      "week": 2,
+      "matches": [
+        {"home": "Palace", "away": "Man City", "predicted_home": 1, "predicted_away": 1, "actual_home": 1, "actual_away": 4},
+        {"home": "Liverpool", "away": "Forest", "predicted_home": 3, "predicted_away": 1, "actual_home": 2, "actual_away": 2},
+        {"home": "Bournemouth", "away": "Everton", "predicted_home": 0, "predicted_away": 1, "actual_home": 1, "actual_away": 1},
+        {"home": "Coventry", "away": "Hull", "predicted_home": 1, "predicted_away": 0, "actual_home": 0, "actual_away": 1},
+        {"home": "Spurs", "away": "Newcastle", "predicted_home": 2, "predicted_away": 1, "actual_home": 0, "actual_away": 2},
+        {"home": "Chelsea", "away": "Brighton", "predicted_home": 4, "predicted_away": 3, "actual_home": 4, "actual_away": 3},
+        {"home": "Leeds", "away": "Brentford", "predicted_home": 0, "predicted_away": 0, "actual_home": 1, "actual_away": 1},
+        {"home": "Sunderland", "away": "Fulham", "predicted_home": 4, "predicted_away": 1, "actual_home": 1, "actual_away": 0},
+        {"home": "Man Utd", "away": "Ipswich", "predicted_home": 3, "predicted_away": 0, "actual_home": 5, "actual_away": 2, "uncertain": true},
+        {"home": "Villa", "away": "Arsenal", "predicted_home": 0, "predicted_away": 3, "actual_home": 0, "actual_away": 1}
+      ]
+    },
+    {
+      "week": 3,
+      "matches": [
+        {"home": "Ipswich", "away": "Liverpool", "predicted_home": 1, "predicted_away": 4, "actual_home": 0, "actual_away": 2},
+        {"home": "Newcastle", "away": "Bournemouth", "predicted_home": 2, "predicted_away": 2, "actual_home": 2, "actual_away": 2},
+        {"home": "Brentford", "away": "Sunderland", "predicted_home": 1, "predicted_away": 1, "actual_home": 1, "actual_away": 1},
+        {"home": "Brighton", "away": "Leeds", "predicted_home": 1, "predicted_away": 2, "actual_home": 1, "actual_away": 1},
+        {"home": "Fulham", "away": "Palace", "predicted_home": 0, "predicted_away": 1, "actual_home": 2, "actual_away": 3},
+        {"home": "Man City", "away": "Coventry", "predicted_home": 3, "predicted_away": 0, "actual_home": 1, "actual_away": 0},
+        {"home": "Forest", "away": "Spurs", "predicted_home": 1, "predicted_away": 0, "actual_home": 0, "actual_away": 0},
+        {"home": "Hull", "away": "Villa", "predicted_home": 0, "predicted_away": 0, "actual_home": 0, "actual_away": 0},
+        {"home": "Everton", "away": "Man Utd", "predicted_home": 0, "predicted_away": 2, "actual_home": 2, "actual_away": 2},
+        {"home": "Arsenal", "away": "Chelsea", "predicted_home": 3, "predicted_away": 3, "actual_home": 2, "actual_away": 1}
+      ]
+    }
+  ],
+  "notes": [
+    "Predictions made before season start",
+    "Actuals updated as of 2026-09-06",
+    "Season picks reflect pre-season point predictions"
+  ],
+  "actuals_source": "https://www.transfermarkt.com/premier-league/tabelle/wettbewerb/GB1/saison_id/2026"
+}
