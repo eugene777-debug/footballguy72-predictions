@@ -1,173 +1,173 @@
 {
   "channel": "TheFootballGuy72",
   "channel_url": "https://www.youtube.com/@TheFootballGuy72",
-  "as_of": "2026-09-07",
+  "as_of": "2026-09-13",
   "season_label": "2026/27",
-  "actuals_source": "https://www.goal.com/en/premier-league/table/2kwbbcootiqqgmrzs6o5inle5",
+  "actuals_source": "https://khelnow.com/football/premier-league-points-table-after-sunderland-vs-arsenal-202609",
   "repo": "https://github.com/eugene777-debug/footballguy72-predictions",
   "season": {
     "source": "My Predictions for the 2026/2027 Premier League Season",
     "url": "https://www.youtube.com/watch?v=5gv40eqpmcA",
-    "mae": 5.0,
+    "mae": 4.9,
     "rows": [
       {
         "team": "Arsenal",
         "predicted_place": 1,
-        "actual_place": 2,
-        "points": 9,
-        "played": 3,
-        "place_error": 1,
-        "delta": 1,
+        "actual_place": 1,
+        "points": 12,
+        "played": 4,
+        "place_error": 0,
+        "delta": 0,
         "in_league": true
       },
       {
         "team": "Liverpool",
         "predicted_place": 2,
         "actual_place": 6,
-        "points": 5,
-        "played": 3,
+        "points": 6,
+        "played": 4,
         "place_error": 4,
-        "delta": 4,
+        "delta": -4,
         "in_league": true
       },
       {
         "team": "Manchester United",
         "predicted_place": 3,
-        "actual_place": 11,
+        "actual_place": 13,
         "points": 4,
         "played": 3,
-        "place_error": 8,
-        "delta": 8,
+        "place_error": 10,
+        "delta": -10,
         "in_league": true
       },
       {
         "team": "Manchester City",
         "predicted_place": 4,
-        "actual_place": 1,
+        "actual_place": 2,
         "points": 9,
         "played": 3,
-        "place_error": 3,
-        "delta": -3,
+        "place_error": 2,
+        "delta": 2,
         "in_league": true
       },
       {
         "team": "Chelsea",
         "predicted_place": 5,
         "actual_place": 4,
-        "points": 6,
-        "played": 3,
-        "place_error": 1,
-        "delta": -1,
-        "in_league": true
-      },
-      {
-        "team": "Tottenham Hotspur",
-        "predicted_place": 6,
-        "actual_place": 18,
-        "points": 1,
-        "played": 3,
-        "place_error": 12,
-        "delta": 12,
-        "in_league": true
-      },
-      {
-        "team": "Aston Villa",
-        "predicted_place": 7,
-        "actual_place": 17,
-        "points": 1,
-        "played": 3,
-        "place_error": 10,
-        "delta": 10,
-        "in_league": true
-      },
-      {
-        "team": "Leeds United",
-        "predicted_place": 8,
-        "actual_place": 9,
-        "points": 5,
-        "played": 3,
+        "points": 7,
+        "played": 4,
         "place_error": 1,
         "delta": 1,
         "in_league": true
       },
       {
-        "team": "Everton",
-        "predicted_place": 9,
-        "actual_place": 8,
+        "team": "Tottenham Hotspur",
+        "predicted_place": 6,
+        "actual_place": 17,
+        "points": 2,
+        "played": 4,
+        "place_error": 11,
+        "delta": -11,
+        "in_league": true
+      },
+      {
+        "team": "Aston Villa",
+        "predicted_place": 7,
+        "actual_place": 19,
+        "points": 1,
+        "played": 4,
+        "place_error": 12,
+        "delta": -12,
+        "in_league": true
+      },
+      {
+        "team": "Leeds United",
+        "predicted_place": 8,
+        "actual_place": 10,
         "points": 5,
         "played": 3,
-        "place_error": 1,
-        "delta": -1,
+        "place_error": 2,
+        "delta": -2,
+        "in_league": true
+      },
+      {
+        "team": "Everton",
+        "predicted_place": 9,
+        "actual_place": 7,
+        "points": 6,
+        "played": 4,
+        "place_error": 2,
+        "delta": 2,
         "in_league": true
       },
       {
         "team": "Brentford",
         "predicted_place": 10,
         "actual_place": 5,
-        "points": 5,
-        "played": 3,
+        "points": 6,
+        "played": 4,
         "place_error": 5,
-        "delta": -5,
+        "delta": 5,
         "in_league": true
       },
       {
         "team": "AFC Bournemouth",
         "predicted_place": 11,
         "actual_place": 15,
-        "points": 2,
-        "played": 3,
+        "points": 3,
+        "played": 4,
         "place_error": 4,
-        "delta": 4,
+        "delta": -4,
         "in_league": true
       },
       {
         "team": "Nottingham Forest",
         "predicted_place": 12,
-        "actual_place": 16,
-        "points": 2,
-        "played": 3,
-        "place_error": 4,
-        "delta": 4,
+        "actual_place": 11,
+        "points": 5,
+        "played": 4,
+        "place_error": 1,
+        "delta": 1,
         "in_league": true
       },
       {
         "team": "Brighton & Hove Albion",
         "predicted_place": 13,
-        "actual_place": 10,
+        "actual_place": 12,
         "points": 4,
         "played": 3,
-        "place_error": 3,
-        "delta": -3,
+        "place_error": 1,
+        "delta": 1,
         "in_league": true
       },
       {
         "team": "Sunderland",
         "predicted_place": 14,
-        "actual_place": 12,
+        "actual_place": 14,
         "points": 4,
-        "played": 3,
-        "place_error": 2,
-        "delta": -2,
+        "played": 4,
+        "place_error": 0,
+        "delta": 0,
         "in_league": true
       },
       {
         "team": "Crystal Palace",
         "predicted_place": 15,
-        "actual_place": 13,
+        "actual_place": 16,
         "points": 3,
-        "played": 3,
-        "place_error": 2,
-        "delta": -2,
+        "played": 4,
+        "place_error": 1,
+        "delta": -1,
         "in_league": true
       },
       {
         "team": "Fulham",
         "predicted_place": 16,
-        "actual_place": 19,
-        "points": 0,
-        "played": 3,
-        "place_error": 3,
-        "delta": 3,
+        "actual_place": 18,
+        "points": 1,
+        "played": 4,
+        "place_error": 2,
+        "delta": -2,
         "in_league": true
       },
       {
@@ -177,37 +177,37 @@
         "points": 0,
         "played": 3,
         "place_error": 3,
-        "delta": 3,
+        "delta": -3,
         "in_league": true
       },
       {
         "team": "Newcastle United",
         "predicted_place": 18,
-        "actual_place": 7,
+        "actual_place": 9,
         "points": 5,
         "played": 3,
-        "place_error": 11,
-        "delta": -11,
+        "place_error": 9,
+        "delta": 9,
         "in_league": true
       },
       {
         "team": "Hull City",
         "predicted_place": 19,
         "actual_place": 3,
-        "points": 7,
-        "played": 3,
+        "points": 8,
+        "played": 4,
         "place_error": 16,
-        "delta": -16,
+        "delta": 16,
         "in_league": true
       },
       {
         "team": "Ipswich Town",
         "predicted_place": 20,
-        "actual_place": 14,
-        "points": 3,
-        "played": 3,
-        "place_error": 6,
-        "delta": -6,
+        "actual_place": 8,
+        "points": 6,
+        "played": 4,
+        "place_error": 12,
+        "delta": 12,
         "in_league": true
       }
     ]
@@ -394,7 +394,7 @@
           "exact": false,
           "correct_result": false,
           "uncertain": false,
-          "notes": "Forest win 1-0; Morgan Gibbs-White goal. Spurs yet to score after two MDs; continues. City Ground. (Whisper once said '1-1-0' \u2014 clearly 1-0.)"
+          "notes": "Forest win 1-0; Morgan Gibbs-White goal. Spurs yet to score after two MDs; continues. City Ground. (Whisper once said '1-1-0' — clearly 1-0.)"
         },
         {
           "home": "Hull City",
@@ -424,7 +424,7 @@
           "exact": false,
           "correct_result": false,
           "uncertain": false,
-          "notes": "Absolute banger / crazy game 3-3 at Emirates. Declan Rice from outside the box; Crystal/Cristian Solis brace for Arsenal; Chelsea front three all score \u2014 Morgan Rogers, Cole Palmer, Joao Pedro. Chelsea can score but can't defend."
+          "notes": "Absolute banger / crazy game 3-3 at Emirates. Declan Rice from outside the box; Crystal/Cristian Solis brace for Arsenal; Chelsea front three all score — Morgan Rogers, Cole Palmer, Joao Pedro. Chelsea can score but can't defend."
         }
       ],
       "exact_count": 3,
@@ -438,18 +438,18 @@
     "scored": 20,
     "exact_pct": 20.0,
     "result_pct": 55.0,
-    "season_mae": 5.0
+    "season_mae": 4.9
   },
   "notes": [
-    "Season place accuracy is early (only 3 matches played). MAE = average |predicted place \u2212 current place|.",
-    "As of 2026-09-07: exact 4/20 (20.0%), correct 1X2 11/20 (55.0%), season MAE 5.0.",
+    "Season place accuracy includes partial MW4 data (Man City vs Man United and Leeds vs Newcastle not yet played on Monday 9/14). MAE = average |predicted place − current place|.",
+    "As of 2026-09-13 after MW4 (partial): exact 4/20 (20.0%), correct 1X2 11/20 (55.0%), season MAE 4.9.",
     "One Matchweek 2 pick (Man United vs Ipswich) was inferred 3-0 and marked uncertain.",
     "No new TheFootballGuy72 videos since Matchweek 3 predictions (uploaded 2026-09-05). Channel still has 3 videos.",
-    "Table verified against Goal.com + TheSportsDB after Matchweek 3 (completed 2026-09-06)."
+    "Table verified against TheSportsDB + khelnow.com after Matchweek 4 Saturday/Sunday fixtures (completed 2026-09-13)."
   ],
   "sources_cross_checked": [
-    "https://www.goal.com/en/premier-league/table/2kwbbcootiqqgmrzs6o5inle5",
+    "https://khelnow.com/football/premier-league-points-table-after-sunderland-vs-arsenal-202609",
     "https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s=2026-2027",
-    "https://www.transfermarkt.com/premier-league/tabelle/wettbewerb/GB1/saison_id/2026"
+    "https://www.goal.com/en/premier-league/table/2kwbbcootiqqgmrzs6o5inle5"
   ]
 }
