@@ -1,14 +1,14 @@
 {
   "channel": "TheFootballGuy72",
   "channel_url": "https://www.youtube.com/@TheFootballGuy72",
-  "as_of": "2026-09-14",
+  "as_of": "2026-09-15",
   "season_label": "2026/27",
   "actuals_source": "https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s=2026-2027",
   "repo": "https://github.com/eugene777-debug/footballguy72-predictions",
   "season": {
     "source": "My Predictions for the 2026/2027 Premier League Season",
     "url": "https://www.youtube.com/watch?v=5gv40eqpmcA",
-    "mae": 5.1,
+    "mae": 5.0,
     "rows": [
       {
         "team": "Arsenal",
@@ -23,11 +23,11 @@
       {
         "team": "Liverpool",
         "predicted_place": 2,
-        "actual_place": 7,
+        "actual_place": 8,
         "points": 6,
         "played": 4,
-        "place_error": 5,
-        "delta": -5,
+        "place_error": 6,
+        "delta": -6,
         "in_league": true
       },
       {
@@ -53,11 +53,11 @@
       {
         "team": "Chelsea",
         "predicted_place": 5,
-        "actual_place": 5,
+        "actual_place": 6,
         "points": 7,
         "played": 4,
-        "place_error": 0,
-        "delta": 0,
+        "place_error": 1,
+        "delta": -1,
         "in_league": true
       },
       {
@@ -83,31 +83,31 @@
       {
         "team": "Leeds United",
         "predicted_place": 8,
-        "actual_place": 11,
-        "points": 5,
-        "played": 3,
-        "place_error": 3,
-        "delta": -3,
+        "actual_place": 3,
+        "points": 8,
+        "played": 4,
+        "place_error": 5,
+        "delta": 5,
         "in_league": true
       },
       {
         "team": "Everton",
         "predicted_place": 9,
-        "actual_place": 8,
+        "actual_place": 9,
         "points": 6,
         "played": 4,
-        "place_error": 1,
-        "delta": 1,
+        "place_error": 0,
+        "delta": 0,
         "in_league": true
       },
       {
         "team": "Brentford",
         "predicted_place": 10,
-        "actual_place": 6,
+        "actual_place": 7,
         "points": 6,
         "played": 4,
-        "place_error": 4,
-        "delta": 4,
+        "place_error": 3,
+        "delta": 3,
         "in_league": true
       },
       {
@@ -123,21 +123,21 @@
       {
         "team": "Nottingham Forest",
         "predicted_place": 12,
-        "actual_place": 12,
+        "actual_place": 11,
         "points": 5,
         "played": 4,
-        "place_error": 0,
-        "delta": 0,
+        "place_error": 1,
+        "delta": 1,
         "in_league": true
       },
       {
         "team": "Brighton & Hove Albion",
         "predicted_place": 13,
-        "actual_place": 4,
+        "actual_place": 5,
         "points": 7,
         "played": 4,
-        "place_error": 9,
-        "delta": 9,
+        "place_error": 8,
+        "delta": 8,
         "in_league": true
       },
       {
@@ -183,31 +183,31 @@
       {
         "team": "Newcastle United",
         "predicted_place": 18,
-        "actual_place": 10,
+        "actual_place": 12,
         "points": 5,
-        "played": 3,
-        "place_error": 8,
-        "delta": 8,
+        "played": 4,
+        "place_error": 6,
+        "delta": 6,
         "in_league": true
       },
       {
         "team": "Hull City",
         "predicted_place": 19,
-        "actual_place": 3,
+        "actual_place": 4,
         "points": 8,
         "played": 4,
-        "place_error": 16,
-        "delta": 16,
+        "place_error": 15,
+        "delta": 15,
         "in_league": true
       },
       {
         "team": "Ipswich Town",
         "predicted_place": 20,
-        "actual_place": 9,
+        "actual_place": 10,
         "points": 6,
         "played": 4,
-        "place_error": 11,
-        "delta": 11,
+        "place_error": 10,
+        "delta": 10,
         "in_league": true
       }
     ]
@@ -438,20 +438,20 @@
     "scored": 20,
     "exact_pct": 20.0,
     "result_pct": 55.0,
-    "season_mae": 5.1
+    "season_mae": 5.0
   },
   "notes": [
-    "Season place accuracy after MW4 Sunday results (Man United 0-1 Man City; Coventry 0-5 Brighton). Leeds vs Newcastle still pending Monday 9/14 kickoff (~12:00 PT).",
-    "As of 2026-09-14: exact 4/20 (20.0%), correct 1X2 11/20 (55.0%), season MAE 5.1 (was 4.9).",
+    "MW4 complete after Leeds United 4-1 Newcastle United (Mon 2026-09-14 at Elland Road). Leeds climbed to 3rd (8 pts); Newcastle to 12th (5 pts).",
+    "As of 2026-09-15: exact 4/20 (20.0%), correct 1X2 11/20 (55.0%), season MAE 5.0 (was 5.1).",
     "No new TheFootballGuy72 videos since Matchweek 3 predictions (uploaded 2026-09-05). Channel still has 3 videos.",
     "One Matchweek 2 pick (Man United vs Ipswich) was inferred 3-0 and marked uncertain.",
-    "Table cross-checked TheSportsDB (updated 2026-09-14) + Exa standings + Guardian match reports."
+    "Table cross-checked Exa standings + GiveMeSport + ESPN/Reuters Leeds–Newcastle reports (TheSportsDB free lookup returned only top 5 this run)."
   ],
   "sources_cross_checked": [
     "https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s=2026-2027",
     "https://exa.ai/library/sports/premier-league/standings",
-    "https://www.theguardian.com/football/2026/sep/13/manchester-united-manchester-city-premier-league-match-report",
-    "https://www.theguardian.com/football/2026/sep/13/coventry-brighton-premier-league-match-report",
+    "https://www.givemesport.com/db/premier-league/standings-table/2027/",
+    "https://www.reuters.com/sports/soccer/leeds-thrash-newcastle-4-1-climb-third-premier-league-2026-09-14/",
     "https://www.youtube.com/feeds/videos.xml?channel_id=UCCZfMuvIcwlbIxlI3wjthQA"
   ]
 }
