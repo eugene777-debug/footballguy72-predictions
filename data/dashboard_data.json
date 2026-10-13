@@ -1,14 +1,14 @@
 {
   "channel": "TheFootballGuy72",
   "channel_url": "https://www.youtube.com/@TheFootballGuy72",
-  "as_of": "2026-10-12",
+  "as_of": "2026-10-13",
   "season_label": "2026/27",
-  "actuals_source": "ESPN API standings + scoreboard 2026-10-12 (MW6: 9 of 10 played; Coventry v Newcastle Mon 2026-10-12 12:00 PT pending)",
+  "actuals_source": "ESPN API standings + scoreboard 2026-10-13 (MW6 complete: 10 of 10 played)",
   "repo": "https://github.com/eugene777-debug/footballguy72-predictions",
   "season": {
     "source": "My Predictions for the 2026/2027 Premier League Season",
     "url": "https://www.youtube.com/watch?v=5gv40eqpmcA",
-    "mae": 5.5,
+    "mae": 5.8,
     "rows": [
       {
         "team": "Manchester City",
@@ -115,7 +115,7 @@
         "predicted_place": 18,
         "actual_place": 11,
         "points": 8,
-        "played": 5,
+        "played": 6,
         "place_error": 7,
         "delta": 7,
         "in_league": true
@@ -141,63 +141,63 @@
         "in_league": true
       },
       {
+        "team": "Coventry City",
+        "predicted_place": 17,
+        "actual_place": 14,
+        "points": 6,
+        "played": 6,
+        "place_error": 3,
+        "delta": 3,
+        "in_league": true
+      },
+      {
         "team": "Nottingham Forest",
         "predicted_place": 12,
-        "actual_place": 14,
+        "actual_place": 15,
         "points": 5,
         "played": 6,
-        "place_error": 2,
-        "delta": -2,
+        "place_error": 3,
+        "delta": -3,
         "in_league": true
       },
       {
         "team": "Aston Villa",
         "predicted_place": 7,
-        "actual_place": 15,
+        "actual_place": 16,
         "points": 5,
         "played": 6,
-        "place_error": 8,
-        "delta": -8,
+        "place_error": 9,
+        "delta": -9,
         "in_league": true
       },
       {
         "team": "Sunderland",
         "predicted_place": 14,
-        "actual_place": 16,
+        "actual_place": 17,
         "points": 4,
         "played": 6,
-        "place_error": 2,
-        "delta": -2,
+        "place_error": 3,
+        "delta": -3,
         "in_league": true
       },
       {
         "team": "AFC Bournemouth",
         "predicted_place": 11,
-        "actual_place": 17,
+        "actual_place": 18,
         "points": 3,
         "played": 6,
-        "place_error": 6,
-        "delta": -6,
+        "place_error": 7,
+        "delta": -7,
         "in_league": true
       },
       {
         "team": "Tottenham Hotspur",
         "predicted_place": 6,
-        "actual_place": 18,
-        "points": 3,
-        "played": 6,
-        "place_error": 12,
-        "delta": -12,
-        "in_league": true
-      },
-      {
-        "team": "Coventry City",
-        "predicted_place": 17,
         "actual_place": 19,
         "points": 3,
-        "played": 5,
-        "place_error": 2,
-        "delta": -2,
+        "played": 6,
+        "place_error": 13,
+        "delta": -13,
         "in_league": true
       },
       {
@@ -438,15 +438,15 @@
     "scored": 20,
     "exact_pct": 20.0,
     "result_pct": 55.0,
-    "season_mae": 5.5
+    "season_mae": 5.8
   },
   "notes": [
-    "As of 2026-10-12: MW6 9 of 10 matches played. Coventry City v Newcastle United kicks off Mon 2026-10-12 19:00 UTC (12:00 PT); both on P=5.",
-    "MW6 results: Arsenal 2-1 Leeds; Aston Villa 2-2 Brentford; Chelsea 5-1 Bournemouth; Ipswich 2-1 Fulham; Sunderland 0-2 Brighton; Man United 1-1 Tottenham; Crystal Palace 3-1 Nottingham Forest; Hull 2-2 Everton; Liverpool 0-3 Man City.",
+    "As of 2026-10-13: MW6 complete (10/10). Coventry City 4-1 Newcastle United; Coventry up from 19th to 14th.",
+    "MW6 results: Arsenal 2-1 Leeds; Aston Villa 2-2 Brentford; Chelsea 5-1 Bournemouth; Ipswich 2-1 Fulham; Sunderland 0-2 Brighton; Man United 1-1 Tottenham; Crystal Palace 3-1 Nottingham Forest; Hull 2-2 Everton; Liverpool 0-3 Man City; Coventry City 4-1 Newcastle United.",
     "Correction: the earlier note listing Liverpool 0-0 Man City was a pre-kickoff placeholder; actual result Liverpool 0-3 Man City.",
     "MW5 & MW6 prediction videos still not ingested (YouTube requires sign-in for transcript/download): Z5HmrNcZ_x8, AWbW6s1qjHs. Waiting on picks pasted by Eugene.",
     "Match totals unchanged: exact 4/20 (20.0%), correct 1X2 11/20 (55.0%) from MW2+MW3 only.",
-    "Season MAE: 5.5 (was 5.4).",
+    "Season MAE: 5.8 (was 5.5).",
     "Newest channel upload GI7O7fzUPiw (\"Liverpool v.s Man City combined 11\", 2026-10-11) is not a matchweek prediction video; not ingested."
   ],
   "sources_cross_checked": [
