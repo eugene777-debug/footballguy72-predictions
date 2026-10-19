@@ -1,14 +1,14 @@
 {
   "channel": "TheFootballGuy72",
   "channel_url": "https://www.youtube.com/@TheFootballGuy72",
-  "as_of": "2026-10-18",
+  "as_of": "2026-10-19",
   "season_label": "2026/27",
-  "actuals_source": "ESPN API standings + scoreboard 2026-10-18 (MW7: 8 of 10 played, Forest v Arsenal in progress, Spurs v Coventry scheduled)",
+  "actuals_source": "ESPN API standings + scoreboard 2026-10-19 (MW7: 9 of 10 played, Forest 0-1 Arsenal final, Spurs v Coventry Mon pending)",
   "repo": "https://github.com/eugene777-debug/footballguy72-predictions",
   "season": {
     "source": "My Predictions for the 2026/2027 Premier League Season",
     "url": "https://www.youtube.com/watch?v=5gv40eqpmcA",
-    "mae": 5.0,
+    "mae": 4.9,
     "rows": [
       {
         "team": "Manchester City",
@@ -23,21 +23,21 @@
       {
         "team": "Arsenal",
         "predicted_place": 1,
-        "actual_place": 3,
-        "points": 15,
-        "played": 6,
-        "place_error": 2,
-        "delta": -2,
+        "actual_place": 2,
+        "points": 18,
+        "played": 7,
+        "place_error": 1,
+        "delta": -1,
         "in_league": true
       },
       {
         "team": "Brighton & Hove Albion",
         "predicted_place": 13,
-        "actual_place": 2,
+        "actual_place": 3,
         "points": 16,
         "played": 7,
-        "place_error": 11,
-        "delta": 11,
+        "place_error": 10,
+        "delta": 10,
         "in_league": true
       },
       {
@@ -155,7 +155,7 @@
         "predicted_place": 12,
         "actual_place": 18,
         "points": 5,
-        "played": 6,
+        "played": 7,
         "place_error": 6,
         "delta": -6,
         "in_league": true
@@ -438,10 +438,10 @@
     "scored": 20,
     "exact_pct": 20.0,
     "result_pct": 55.0,
-    "season_mae": 5.0
+    "season_mae": 4.9
   },
   "notes": [
-    "As of 2026-10-18: MW7 8/10 played. Everton 0-2 Chelsea; Brentford 1-2 Liverpool; Fulham 1-0 Hull; Man City 3-2 Ipswich; Newcastle 0-1 Aston Villa; Bournemouth 2-0 Sunderland; Brighton 5-0 Crystal Palace; Leeds 1-1 Man United. Forest v Arsenal in progress, Spurs v Coventry scheduled Mon.",
+    "As of 2026-10-19: MW7 9/10 played. Nottingham Forest 0-1 Arsenal (Full Time). Spurs v Coventry scheduled Mon 2026-10-19 12:00 PT.",
     "As of 2026-10-13: MW6 complete (10/10). Coventry City 4-1 Newcastle United; Coventry up from 19th to 14th.",
     "MW6 results: Arsenal 2-1 Leeds; Aston Villa 2-2 Brentford; Chelsea 5-1 Bournemouth; Ipswich 2-1 Fulham; Sunderland 0-2 Brighton; Man United 1-1 Tottenham; Crystal Palace 3-1 Nottingham Forest; Hull 2-2 Everton; Liverpool 0-3 Man City; Coventry City 4-1 Newcastle United.",
     "Correction: the earlier note listing Liverpool 0-0 Man City was a pre-kickoff placeholder; actual result Liverpool 0-3 Man City.",
