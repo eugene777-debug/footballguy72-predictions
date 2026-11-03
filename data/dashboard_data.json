@@ -1,14 +1,14 @@
 {
   "channel": "TheFootballGuy72",
   "channel_url": "https://www.youtube.com/@TheFootballGuy72",
-  "as_of": "2026-11-02",
+  "as_of": "2026-11-03",
   "season_label": "2026/27",
-  "actuals_source": "ESPN API standings + scoreboard 2026-11-02 (MW9 9/10 final; Liverpool 0-1 Arsenal Full Time, Newcastle v Everton scheduled Mon 2 Nov 12:00 PT)",
+  "actuals_source": "ESPN API standings + scoreboard 2026-11-03 (MW9 complete 10/10; Newcastle United 0-1 Everton Full Time)",
   "repo": "https://github.com/eugene777-debug/footballguy72-predictions",
   "season": {
     "source": "My Predictions for the 2026/2027 Premier League Season",
     "url": "https://www.youtube.com/watch?v=5gv40eqpmcA",
-    "mae": 4.5,
+    "mae": 4.3,
     "rows": [
       {
         "team": "Manchester City",
@@ -53,11 +53,11 @@
       {
         "team": "Everton",
         "predicted_place": 9,
-        "actual_place": 14,
-        "points": 10,
-        "played": 8,
-        "place_error": 5,
-        "delta": -5,
+        "actual_place": 7,
+        "points": 13,
+        "played": 9,
+        "place_error": 2,
+        "delta": 2,
         "in_league": true
       },
       {
@@ -73,21 +73,21 @@
       {
         "team": "Leeds United",
         "predicted_place": 8,
-        "actual_place": 11,
+        "actual_place": 12,
         "points": 11,
         "played": 9,
-        "place_error": 3,
-        "delta": -3,
+        "place_error": 4,
+        "delta": -4,
         "in_league": true
       },
       {
         "team": "Hull City",
         "predicted_place": 19,
-        "actual_place": 10,
+        "actual_place": 11,
         "points": 11,
         "played": 9,
-        "place_error": 9,
-        "delta": 9,
+        "place_error": 8,
+        "delta": 8,
         "in_league": true
       },
       {
@@ -103,21 +103,21 @@
       {
         "team": "Ipswich Town",
         "predicted_place": 20,
-        "actual_place": 13,
+        "actual_place": 14,
         "points": 11,
         "played": 9,
-        "place_error": 7,
-        "delta": 7,
+        "place_error": 6,
+        "delta": 6,
         "in_league": true
       },
       {
         "team": "Newcastle United",
         "predicted_place": 18,
-        "actual_place": 12,
+        "actual_place": 13,
         "points": 11,
-        "played": 8,
-        "place_error": 6,
-        "delta": 6,
+        "played": 9,
+        "place_error": 5,
+        "delta": 5,
         "in_league": true
       },
       {
@@ -163,11 +163,11 @@
       {
         "team": "Aston Villa",
         "predicted_place": 7,
-        "actual_place": 9,
+        "actual_place": 10,
         "points": 12,
         "played": 9,
-        "place_error": 2,
-        "delta": -2,
+        "place_error": 3,
+        "delta": -3,
         "in_league": true
       },
       {
@@ -183,21 +183,21 @@
       {
         "team": "AFC Bournemouth",
         "predicted_place": 11,
-        "actual_place": 7,
+        "actual_place": 8,
         "points": 12,
         "played": 9,
-        "place_error": 4,
-        "delta": 4,
+        "place_error": 3,
+        "delta": 3,
         "in_league": true
       },
       {
         "team": "Tottenham Hotspur",
         "predicted_place": 6,
-        "actual_place": 8,
+        "actual_place": 9,
         "points": 12,
         "played": 9,
-        "place_error": 2,
-        "delta": -2,
+        "place_error": 3,
+        "delta": -3,
         "in_league": true
       },
       {
@@ -438,9 +438,11 @@
     "scored": 20,
     "exact_pct": 20.0,
     "result_pct": 55.0,
-    "season_mae": 4.5
+    "season_mae": 4.3
   },
   "notes": [
+    "As of 2026-11-03: MW9 complete (10/10). Newcastle United 0-1 Everton (played Mon 2026-11-02, Full Time, ESPN); Everton 7th on 13 pts (played 9), Newcastle United 13th on 11 pts (played 9). Season MAE 4.3 (was 4.5). Exact 4/20 (20.0%) and 1X2 11/20 (55.0%) unchanged; no new matchweek picks. Newest channel upload still GI7O7fzUPiw; MW5/MW6 picks still pending.",
+    "MW9 results: Chelsea 2-0 Manchester United; AFC Bournemouth 2-0 Leeds United; Brentford 2-0 Nottingham Forest; Coventry City 3-1 Sunderland; Hull City 2-2 Ipswich Town; Manchester City 0-1 Brighton & Hove Albion; Tottenham Hotspur 2-0 Crystal Palace; Aston Villa 1-1 Fulham; Liverpool 0-1 Arsenal; Newcastle United 0-1 Everton.",
     "As of 2026-11-02: MW9 9/10 final (ESPN Full Time). Liverpool 0-1 Arsenal; Arsenal 1st on 24 pts (played 9), Manchester City 2nd on 21, Liverpool remain 5th on 15 (played 9). Newcastle United v Everton still scheduled Mon 2026-11-02 12:00 PT (pending). Season MAE 4.5 (was 4.6). Exact 4/20 (20.0%) and 1X2 11/20 (55.0%) unchanged; no new matchweek picks. Newest channel upload still GI7O7fzUPiw; MW5/MW6 picks still pending.",
     "As of 2026-11-01: MW9 8/10 final (ESPN Full Time). Chelsea 2-0 Manchester United; AFC Bournemouth 2-0 Leeds United; Brentford 2-0 Nottingham Forest; Coventry City 3-1 Sunderland; Hull City 2-2 Ipswich Town; Manchester City 0-1 Brighton & Hove Albion; Tottenham Hotspur 2-0 Crystal Palace; Aston Villa 1-1 Fulham. Liverpool v Arsenal in progress at verification (not Full Time; excluded from the table). Newcastle United v Everton scheduled Mon 2026-11-02 12:00 PT (pending). Season MAE 4.6 (was 4.6). Exact 4/20 (20.0%) and 1X2 11/20 (55.0%) unchanged; no MW9 scoreline picks in the data. Newest channel upload still GI7O7fzUPiw; MW5/MW6 picks still pending.",
     "As of 2026-10-25: MW8 complete (10/10). Sunderland 0-0 Leeds United; Leeds 7th on 11 pts, Sunderland remain 20th on 5 pts. Season MAE 4.6 (was 4.8).",
